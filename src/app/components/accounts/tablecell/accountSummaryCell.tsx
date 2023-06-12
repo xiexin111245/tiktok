@@ -9,7 +9,7 @@ import { AccountSummary }  from '../../../type/accounts-page'
 import Image from 'next/image';
 import AccountOfficial from '../../../icons/AccountOfficial.svg'
 import DetailButton from './detailButton';
-
+import Link from 'next/link';
 
 
 export default function AccountSummaryCell(props: GridRenderCellParams<any, AccountSummary>) {
@@ -38,7 +38,9 @@ export default function AccountSummaryCell(props: GridRenderCellParams<any, Acco
                 </Box>
             </Box>
             <Box>
-                <DetailButton />
+                <Link href='/accounts/1'>
+                    <DetailButton />
+                </Link>
             </Box>
         </Box>
     )
