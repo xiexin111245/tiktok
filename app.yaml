@@ -1,16 +1,7 @@
-<<<<<<< HEAD
 env: standard
 runtime: nodejs20
 service: default
 handlers:
   - url: /.*
     secure: always
-=======
-env: standard
-runtime: nodejs20
-service: default
-handlers:
-  - url: /.*
-    secure: always
->>>>>>> 95a98139f3c176b77d5ef03ca73578736b8e895e
     script: auto
